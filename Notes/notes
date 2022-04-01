@@ -1,0 +1,65 @@
+Selenium Class 1
+WHat is software testing?
+--identifying the correctness and quality of the application
+
+How many ways can we actually test?
+--manual
+--automation
+
+When do we go for automation?
+--after manuel testing is passed
+--when environment is stable
+--analyze our test suite and choose our automation tools
+
+What automation tools do we know about?
+Selenium, TestNG,Cucumber, Katalon Studio, UFT/QTP
+
+Level of testing
+--Unit testing
+--Integration testing
+--Acceptance testing
+--System testing
+
+Types of testing?
+--Functional testing
+--Non-Functional testing
+    Performance testing
+    Security testing
+
+What is Selenium?
+--a set of tools which helps use automate web applications. it is mainly used
+to perform functional testing
+
+Selenium Components:
+Selenium IDE->integrated development retirement.
+
+What is selenium webdriver?
+Open Source automation tool which allows us to perform actions on a web applications
+webDriver is an Interface
+
+Advantages of Selenium Web Driver:
+--Open Source, free, download whenever you want
+--works with different browsers and supports cross browsing testing
+--supports different programming language-->Java,javascript,ruby,python
+--OS independent -->IOS,Windows,Linux
+
+Disadvantages of Selenium Web Driver:
+--web based only, can't test desktop applications
+--no technical support
+--no built in reports
+--cant test images videos or captchas
+
+get()vs navigate()
+--navigate can go back and forward and refresh
+--get() will wait for the page to fully load then proceed to next code
+--navigate() does not wait for page to fully open before proceeding to next code
+--get() will not keep the history of the browser whereas navigate() will.
+
+close() vs quit()
+--close() will close the current tab
+--quit() will quit the whole browser
+
+fullscreen() vs maximize()
+--maximize() will maximize the browser and you will still be able to see the control
+(back and forward, bookmark, etc)
+--fullscreen() will maximize the whole application

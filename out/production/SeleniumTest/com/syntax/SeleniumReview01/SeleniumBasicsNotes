@@ -1,0 +1,74 @@
+Selenium Basics Review
+driver.get()
+driver.navigate.to()
+driver.quit()
+driver.close()
+maximize
+minimize
+fullscreen
+
+concept of xpath, name of the tag, and the type of attribute
+
+how to get elements, check boxs, uses radio boxes, grab mutliple tags(siblings,parents)
+
+
+HTML:
+
+Locators:
+(xpath is like breadcrumbs html/body/div) use index when similar tag
+example of xpath(absolute)
+/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[2]/div[2]/input
+
+(relative)xpath syntax
+//input[@id='userName']
+
+we can use start-with in xpath
+in the xpath
+//tagname[start-with(@attribute="starting of the attribute value")]
+//input [start-with(@id,"user")]
+
+<input id="imageno.1"/>
+//input[start-with(@id="imageno")]
+
+contains:
+//tagname[contains(@id,'some portion of value')];
+
+Example:
+<input id="imageno.1"/>
+//input[contains(@id,"mageno)]
+
+
+text:
+//tagName[text()="abcd"]
+
+css selector:
+tagname[attribute="attribute value"]
+
+shortcuts:
+id = #
+
+<input@id="rotwiller"/>
+input#rotwiller
+
+class = .
+<input @id="rotwiller"/>
+input.rotwiller
+
+Hey dom
+bring us the tag"input" -->//input
+who has an attribute id -->[@id]
+and its value is userName -->[@id='username']
+
+@ means attribute
+
+Xpath:
+<html>
+<body>
+    <h1
+</html>
+
+
+Why do we need so many locators?
+
+
+When you send a code to production, there should not be any thread sleeps from final code.

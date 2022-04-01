@@ -1,0 +1,63 @@
+Selenium Class 4
+
+CSS Selector (Cascading style sheet)
+it is another way of locating elemeents on the web page
+
+Syntax:
+tagname[attribute='attribute value']
+
+example: button[type='submit']
+
+CSS does not give opportunity to locate the element by its text
+
+Shortcuts for CSS:
+shortcut for ClassName-->"."
+
+Syntax:tagname.classNameValue
+            input.button
+
+Shortcut for ID --> "#"
+Syntax: TagName#IDValue
+        input#twotabsearchtextbox
+
+contains () method in css:
+* symbol represents contain method
+tagname[attribute*= 'attribute value']
+input[placeholder *= 'phone']
+
+starts-with method in css:
+^ (Circumflex) symbol represents starts with method
+tagname[attribute ^= 'starting attribute value']
+input[type ^= 'pass']
+
+ends-with method in css:
+$ symbol represents ends-with method in css
+tagname[attribute$='ending attribute value']
+img[src $= 'syntax.png']
+
+css finds elements faster than xpath
+
+XPATH vs CSS
+--CSS cannot locate the elements by text whereas xpath can
+--no ends-with method in xpath
+--css has short cuts
+--no advanced CSS
+--css is faster than xpath (finding elements)
+--css has more simple syntax than xpath
+
+WebElement Commands:
+consists of several methods where we can perform an action and get the element state
+on the webpage
+
+isEnabled()--boolean
+isDisplayed()--boolean
+isSelected()--boolean
+clear()--void
+getText()--String
+getAttribute()--String value
+submit()--void
+
+General preferred hierarchy
+id
+name/Xpath but xpath over name
+css
