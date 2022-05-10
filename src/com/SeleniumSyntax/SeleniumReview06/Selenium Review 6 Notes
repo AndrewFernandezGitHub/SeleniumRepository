@@ -1,0 +1,33 @@
+POM:Page Object Model
+
+Test Base:
+    BaseClass:
+        -Navigate to URL(Open Browser)
+        -Close the Browser
+
+
+Utils:
+    CommonMethods Class:(Should extends BaseClass to declare driver from Baseclass to CommonMethods)
+        -ScreenShot
+        -sendText()
+        -Clear()
+        -iFrameSwitch()
+        -waits
+
+
+Pages:(Contains the locators of WebElements)(Should extend Common Methods from Utils)
+    LoginPage
+    DashBoardPage
+    addEmployeePage
+
+Test:
+    LoginPageTest
+    DashboardTest
+
+
+Under POM we can also do PageFactory:
+
+You can use PageFactory to initialize elements
+
+This can be used instead of Pages:
+@FindBy (annotation)

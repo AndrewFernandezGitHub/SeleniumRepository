@@ -1,0 +1,69 @@
+Dont try to memorize alll the syntax, understand the greater logic and concepts/
+
+<form t="1908 aa">
+    <div text="mydiv">
+        <label name="myid"/>
+        <input t="ad 123 34"/>
+        <label name="myid"/>
+        <input t="ad 1234 34"/>
+    <div>
+</form>
+
+
+
+advance xpath:
+get to the nearest sibling,parent or ancestor first and then have access to the desired tag
+
+following sibling:
+//label[@name="myid"]/following-sibling::input
+-hey get me tag with name "label whose attribute name has value "myid"
+and then get me its following-sibling which is"input
+
+preceding-sibling
+the sibling that is above
+//label[@name="myid"]/following
+
+following sibling:
+//label[@name]"myid"]/following-sibling::input
+hey get me tag with name "label" whose attribute "name" has value "myid" and then get me
+its following-sibling which is "input";
+
+preceding-sibling:
+the sibling that is above.
+//input[@id= 'calFromDate']/preceding-sibling::label
+
+parent:
+//label[text()="Enter message"]/parent::div
+hey get me the "label" with the text "Enter message" and then get me its parent "div"
+
+ancestor
+//label[text()="Enter message"]/ancestor::form
+hey get me tag with the name "label" with the text "Enter Message" and then get me its's ancestor
+"form"
+
+
+Locators:
+driver.findElement(By.xpath/css/name/id/tag/etc(""));
+
+
+
+Whenever we have dropdowns that are made using select class,
+we can use select class in selenium to deal with them
+
+The process:
+1.Get to the select tag for that dropdown using your driver.findElement
+2.create an instance of Select class and pass your webElement
+3.we can select any option by value/by visible text/by index
+
+no such element selection go check css selection or selector
+
+byvalue;
+byindex;
+byvalueindex;
+
+
+
+How to push code to Repository using Git Terminal
+
+1.If new project, first create repository on Github, will ned the link to establish the link
+2.

@@ -1,0 +1,15 @@
+understand how to write xpath relative and absolute ***Interview Question
+
+how to locate webelement and login ****Interview Question
+
+dont forget to use driver.switch to handle when handling multiple tabs
+driver.switchTo().window(handle)
+
+windows handle returns you unordered set and does not know where it is.
+
+in order to get it you need to compare the title and compare the the current url handle
+switch to handle, get the title, compare to current title use conditional statement
+
+Tables
+
+TBody vs THead
